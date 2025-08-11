@@ -76,7 +76,7 @@ export default function LoginPage() {
       } else {
         setMessage(result.message);
       }
-    } catch (error) {
+    } catch {
       setMessage('An unexpected error occurred');
     } finally {
       setIsSubmitting(false);
@@ -134,7 +134,7 @@ export default function LoginPage() {
               Sign in to your account
             </h2>
             <p className="text-gray-600 mb-8">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/signup" className="font-semibold text-primary hover:text-primary-hover transition-colors">
                 Create one here
               </Link>
@@ -232,7 +232,7 @@ export default function LoginPage() {
           </form>
 
           {/* Demo credentials */}
-          <div className="mt-8 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-200">
+          <div className="mt-8 p-6 bg-gradient-to-r from-gray-50 to-blue-50 rounded PROFITS AND LOSSES xl border border-gray-200">
             <div className="text-center">
               <h4 className="text-sm font-semibold text-gray-700 mb-4 flex items-center justify-center">
                 <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
@@ -257,4 +257,3 @@ export default function LoginPage() {
     </div>
   );
 }
-
