@@ -94,7 +94,7 @@ export default function SignupPage() {
       } else {
         setMessage(result.message);
       }
-    } catch {
+    } catch (error) {
       setMessage('An unexpected error occurred');
     } finally {
       setIsSubmitting(false);
@@ -321,4 +321,3 @@ export default function SignupPage() {
     </div>
   );
 }
-```
